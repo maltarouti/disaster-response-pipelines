@@ -117,7 +117,7 @@ The link of the website will be `0.0.0.0:3001`
 
 <a id='conclusion'></a>
 ## 8. Conclusion
-In conclusion, catastrophes are horrible if we are not properly prepared to deal with them, thus having a system that consistently delivers correct warnings is helpful to get an early notice of a potential disaster and decrease potential losses. The system was built using scikit-learn and achieved 95% accuracy, but that does not mean it is the best model. Testing different solutions such as [Reccurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network) may give a better result so, feel free to fork this repository and test different solutions.
+In the conclusion, catastrophes are horrible if we are not properly prepared to deal with them, thus having a system that consistently delivers correct warnings is helpful to get an early notice of a potential disaster and decrease potential losses. The system was built using scikit-learn and achieved 95% accuracy, but that does not mean it is the best model. Testing different solutions such as [Reccurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network) may give a better result so, feel free to fork this repository and test different solutions.
 
 <a id='acknowledgements'></a>
 ## 9. Acknowledgements
