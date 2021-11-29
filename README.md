@@ -6,12 +6,13 @@
   * [Extract, Transform, and Load Pipeline](#etl_pipline)
   * [Machine Learning Pipleline](#machine_learning_pipeline)
   * [Flask Web app](#flask_app)
-* [Files Structure](#files)
-* [Requirments](#requirments)
+* [Training Dataset](#dataset)
 * [Running Process](#running)
   * [Process Data](#process_data)
   * [Train Classifier](#train_classifier)
   * [Run the flask web app](#run_flask_app)
+* [Files Structure](#files)
+* [Requirments](#requirments)
 * [Conclusion](#conclusion)
 * [Acknowledgements](#acknowledgements)
 
@@ -43,33 +44,38 @@ The Machine Learning (ML) is responsible for creating the machine learning model
 
 <a id='flask_app'></a>
 ### 2.3 Flask Web App
-Flask Web App is responsible for deploying the machine learning model on a website that allows the user to use the trained model to do predictions.
+Flask Web App is responsible for deploying the machine learning model on a website and allowing the user to use the trained model to do predictions.
 
 ![image](https://github.com/Murtada-Altarouti/Disaster-Response-Pipelines/blob/main/readme_images/website_example.png)
 
-<a id='files'></a>
-## 3. Files Structure
-...
-
-<a id='requirments'></a>
-## 4. Requirments
-...
+<a id='dataset'></a>
+## 3. dataest
+The cleaned training dataset contains more than 26K labeled messages and has 36 different classes such as related, offer, food, water, and electricity. The following photo shows how many messages of each dataset has: ![image](https://github.com/Murtada-Altarouti/Disaster-Response-Pipelines/blob/main/readme_images/dataset.png)
 
 <a id='running'></a>
-## 5. Running Process
+## 4. Running Process
 ...
 
 <a id='process_data'></a>
-### 6.1 Process Data
+### 4.1 Process Data
 ...
 
 <a id='train_classifier'></a>
-### 6.2 Train Classifier 
+### 4.2 Train Classifier 
 ...
 
 <a id='run_flask_app'></a>
-### 6.3 Run the flask web app
+### 4.3 Run the flask web app
 ...
+
+<a id='files'></a>
+## 5. Files Structure
+...
+
+<a id='requirments'></a>
+## 6. Requirments
+...
+
 
 <a id='conclusion'></a>
 ## 7. Conclusion
