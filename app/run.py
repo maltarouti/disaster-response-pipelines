@@ -1,4 +1,6 @@
 import json
+from numpy.core.fromnumeric import size
+from numpy.lib.function_base import sinc
 import plotly
 import pandas as pd
 
@@ -8,7 +10,7 @@ from nltk.tokenize import word_tokenize
 import pickle
 from flask import Flask
 from flask import render_template, request, jsonify
-from plotly.graph_objs import Bar
+from plotly.graph_objs import Bar, Pie
 from sqlalchemy import create_engine
 
 
@@ -25,11 +27,11 @@ def tokenize(text):
     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///./data/DisasterResponse.db')
+engine = create_engine('sqlite:///../data/DisasterResponse.db')
 df = pd.read_sql_table('dataset', engine)
 
 # load model
-with open("./models/classifier.pkl", 'rb') as f:
+with open("../models/classifier.pkl", 'rb') as f:
     model = pickle.load(f)
 
 
@@ -38,31 +40,27 @@ with open("./models/classifier.pkl", 'rb') as f:
 @app.route('/index')
 def index():
     
-    # extract data needed for visuals
-    # TODO: Below is an example - modify to extract data for your own visuals
-    genre_counts = df.groupby('genre').count()['message']
-    genre_names = list(genre_counts.index)
-    
-    # create visuals
-    # TODO: Below is an example - modify to create your own visuals
+    # total the number of each class
+    classes_names = df.iloc[:, 4:].columns
+    class_counts = df.iloc[:,4:].sum()
+
     graphs = [
         {
             'data': [
-                Bar(
-                    x=genre_names,
-                    y=genre_counts
+                Pie(
+                    labels=classes_names,
+                    values=class_counts,
+                    textposition='inside',
+                    hole=0.3
                 )
             ],
 
             'layout': {
-                'title': 'Distribution of Message Genres',
-                'yaxis': {
-                    'title': "Count"
-                },
-                'xaxis': {
-                    'title': "Genre"
-                }
+                'title': 'Distribution of Message Classes',
+                'width':800,
+                'height':800,
             }
+        
         }
     ]
     
