@@ -100,7 +100,6 @@ def evaluate_model(model, X_test, Y_test, category_names):
     print(report)
     print("Model Accuracy: {}%".format(np.mean(y_pred == Y_test.values) * 100))
 
-
 def save_model(model, model_filepath):
     """
     Saves the model to a pickle file
