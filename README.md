@@ -45,7 +45,7 @@ The Machine Learning (ML) is responsible for creating the machine learning model
 ### 2.3 Flask Web App
 Flask Web App is responsible for deploying the machine learning model on a website that allows the user to use the trained model to do predictions.
 
-IMAGE HERE
+![image](https://github.com/Murtada-Altarouti/Disaster-Response-Pipelines/blob/main/readme_images/website_example.png)
 
 <a id='files'></a>
 ## 3. Files Structure
