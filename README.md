@@ -7,12 +7,12 @@
   * [Machine Learning Pipleline](#machine_learning_pipeline)
   * [Flask Web app](#flask_app)
 * [Training Dataset](#dataset)
+* [Files Structure](#files)
+* [Requirments](#requirments)
 * [Running Process](#running)
   * [Process Data](#process_data)
   * [Train Classifier](#train_classifier)
   * [Run the flask web app](#run_flask_app)
-* [Files Structure](#files)
-* [Requirments](#requirments)
 * [Conclusion](#conclusion)
 * [Acknowledgements](#acknowledgements)
 
@@ -52,29 +52,51 @@ Flask Web App is responsible for deploying the machine learning model on a websi
 ## 3. dataest
 The cleaned training dataset contains more than 26K labeled messages and has 36 different classes such as related, offer, food, water, and electricity. The following photo shows how many messages of each dataset has: ![image](https://github.com/Murtada-Altarouti/Disaster-Response-Pipelines/blob/main/readme_images/dataset.png)
 
-<a id='running'></a>
-## 4. Running Process
+<a id='files'></a>
+## 4. Files Structure
+```
+├── app # Website folder
+│   ├── run.py #Responsible of running the website
+│   └── templates
+│       ├── go.html #Responsible of showing the results
+│       └── master.html #The main page
+|
+├── data
+│   ├── disaster_categories.csv #Categories dataset
+│   ├── disaster_messages.csv #Messages dataset
+│   ├── DisasterResponse.db #The cleaned dataset in SQLite database
+│   └── process_data.py #Responsible for preparing the dataset 
+|
+├── models
+│   ├── classifier.pkl #The SVM model
+│   └── train_classifier.py #Responsible for creating the machine learning model
+|
+├── readme_images #This folder contains all images for the readme file
+│   ├── dataset.png
+│   └── website_example.png
+└── README.md #Readme file 
+```
+
+<a id='requirments'></a>
+## 5. Requirments
 ...
 
+<a id='running'></a>
+## 6. Running Process
+This secions explains 
+
 <a id='process_data'></a>
-### 4.1 Process Data
+### 6.1 Process Data
 ...
 
 <a id='train_classifier'></a>
-### 4.2 Train Classifier 
+### 6.2 Train Classifier 
 ...
 
 <a id='run_flask_app'></a>
-### 4.3 Run the flask web app
+### 6.3 Run the flask web app
 ...
 
-<a id='files'></a>
-## 5. Files Structure
-...
-
-<a id='requirments'></a>
-## 6. Requirments
-...
 
 
 <a id='conclusion'></a>
