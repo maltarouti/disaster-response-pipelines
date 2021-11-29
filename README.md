@@ -79,11 +79,14 @@ The cleaned training dataset contains more than 26K labeled messages and has 36 
 
 <a id='requirments'></a>
 ## 5. Requirments
-...
+In order to to run this project, you must have [Python3](https://www.python.org/) installed on your machine. You also must have all listed libraries inside the `requirments.txt` so run the following command to install them: 
+```
+pip3 install -r requirments.txt
+```
 
 <a id='running'></a>
 ## 6. Running Process
-This secions explains 
+This secions explains how to run each part of this project using command prompt or terminal
 
 <a id='process_data'></a>
 ### 6.1 Process Data
