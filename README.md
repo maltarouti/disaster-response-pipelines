@@ -24,16 +24,28 @@ Social media applications are one of the best sources to get a quick overview of
 
 <a id='project_outline'></a>
 ## 2. Project Outline
-...
+This section explains all three parts of this project from cleaning the data to deploying the model on the flask app. 
+
 <a id='etl_pipline'></a>
 ### 2.1 Extract, Transform, and Load Pipeline 
-...
+The Extract, Transform and Load (ETL) is responsible for preparing the dataset for the machine learning pipeline and wors as following:
+* Extract the messages and their categories from the CSV files
+* Clean and merge the messages and categories in one data frame
+* Saves the data frame inside an SQLite database
+
 <a id='machine_learning_pipeline'></a>
 ### 2.2 Machine Learning Pipleline 
-...
+The Machine Learning (ML) is responsible for creating the machine learning model pipeline and works as following:
+* Load the dataset from the SQLite database 
+* Create a machine learning pipeline that tokenizes and trains the SVM model on the training dataset 
+* Evaluate the model on the testing dataset 
+* Save the model as a pickle file 
+
 <a id='flask_app'></a>
-### 2.3 Flask Web app
-...
+### 2.3 Flask Web App
+Flask Web App is responsible for deploying the machine learning model on a website that allows the user to use the trained model to do predictions.
+
+IMAGE HERE
 
 <a id='files'></a>
 ## 3. Files Structure
