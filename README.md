@@ -1,7 +1,7 @@
 # Disaster Response Pipelines
 
 ## Table of Content:
-* [Prject Overview](#project_overview
+* [Prject Overview](#project_overview)
 * Project Outline
   * Extract, Transform, and Load Pipeline 
   * Machine Learning Pipleline 
@@ -16,7 +16,7 @@
 * Acknowledgements
 
 ***
-<a id='project_overview'></>
+<a id='project_overview'></a>
 ## 1. Prject Overview
 ...
 
