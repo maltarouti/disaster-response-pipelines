@@ -2,18 +2,18 @@
 
 ## Table of Content:
 * [Prject Overview](#project_overview)
-* Project Outline
-  * Extract, Transform, and Load Pipeline 
-  * Machine Learning Pipleline 
-  * Flask Web app
-* Files Structure
-* Requirments
-* Running Process
-  * Process Data
-  * Train Classifier 
-  * Run the flask web app
-* Conclusion
-* Acknowledgements
+* [Project Outline](#project_outline)
+  * [Extract, Transform, and Load Pipeline](#etl_pipline)
+  * [Machine Learning Pipleline](#machine_learning_pipeline)
+  * [Flask Web app](#flask_app)
+* [Files Structure](#files)
+* [Requirments](#requirments)
+* [Running Process](#running)
+  * [Process Data](#process_data)
+  * [Train Classifier](#train_classifier)
+  * [Run the flask web app](#run_flask_app)
+* [Conclusion](#conclusion)
+* [Acknowledgements](#acknowledgements)
 
 ***
 <a id='project_overview'></a>
