@@ -55,7 +55,7 @@ The cleaned training dataset contains more than 26K labeled messages and has 36 
 <a id='files'></a>
 ## 4. Files Structure
 ```
-├── app # Website folder
+├── app #Website folder
 │   ├── run.py #Responsible of running the website
 │   └── templates
 │       ├── go.html #Responsible of showing the results
