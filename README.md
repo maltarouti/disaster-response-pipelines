@@ -30,14 +30,14 @@ This section explains all three parts of this project from cleaning the data to 
 
 <a id='etl_pipline'></a>
 ### 2.1 Extract, Transform, and Load Pipeline 
-The Extract, Transform and Load (ETL) is responsible for preparing the dataset for the machine learning pipeline and wors as following:
+The Extract, Transform and Load (ETL) pipeline is responsible for preparing the dataset for the machine learning pipeline and wors as following:
 * Extract the messages and their categories from the CSV files
 * Clean and merge the messages and categories in one data frame
 * Saves the data frame inside an SQLite database
 
 <a id='machine_learning_pipeline'></a>
 ### 2.2 Machine Learning Pipleline 
-The Machine Learning (ML) is responsible for creating the machine learning model pipeline and works as following:
+The Machine Learning (ML) pipeline is responsible for creating the machine learning model pipeline and works as following:
 * Load the dataset from the SQLite database 
 * Create a machine learning pipeline that tokenizes and trains the SVM model on the training dataset 
 * Evaluate the model on the testing dataset 
