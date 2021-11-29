@@ -20,38 +20,47 @@
 ## 1. Prject Overview
 ...
 
+<a id='project_outline'></a>
 ## 2. Project Outline
 ...
-
-## 3. Project Outline
+<a id='etl_pipline'></a>
+### 2.1 Extract, Transform, and Load Pipeline 
 ...
-### 3.1 Extract, Transform, and Load Pipeline 
+<a id='machine_learning_pipeline'></a>
+### 2.2 Machine Learning Pipleline 
 ...
-### 3.2 Machine Learning Pipleline 
-...
-### 3.3 Flask Web app
-...
-
-## 4. Files Structure
+<a id='flask_app'></a>
+### 2.3 Flask Web app
 ...
 
-## 5. Requirments
+<a id='files'></a>
+## 3. Files Structure
 ...
 
-## 6. Running Process
+<a id='requirments'></a>
+## 4. Requirments
 ...
 
+<a id='running'></a>
+## 5. Running Process
+...
+
+<a id='process_data'></a>
 ### 6.1 Process Data
 ...
 
+<a id='train_classifier'></a>
 ### 6.2 Train Classifier 
 ...
 
+<a id='run_flask_app'></a>
 ### 6.3 Run the flask web app
 ...
 
+<a id='conclusion'></a>
 ## 7. Conclusion
 ...
 
+<a id='acknowledgements'></a>
 ## 8. Acknowledgements
 I would like to express my appreciation to Misk Academy and Udacity for the amazing work on the data science course and the support they give us to build this project
