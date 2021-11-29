@@ -20,7 +20,7 @@
 ## 1. Prject Overview
 Disaster response is to reduce possible losses from disasters and provide appropriate help to disaster victims. It is a continuous process in which governments, corporations, and civil society prepare for and mitigate the effects of catastrophes. An appropiate action at all disaster stages results in higher readiness, better warnings, and decreased susceptibility.
 
-Social media applications are one of the best sources to get a quick overview of what is going on around the world, but it is difficult to go through everything on the internet. This project aims to help governments to filter millions of social media messages into categories by using a supervised machine learning model. The model is trained on [Figure Eight](https://appen.com/) dataset to categorize the messages into their appropriate categories so that the governments can respond to disasters quickly.
+Social media applications are one of the best sources to get a quick overview of what is going on around the world, but it is difficult to go through everything on the internet. This project aims to help governments to filter millions of social media messages into categories by using a supervised machine learning model. The model is trained on [Figure Eight](https://appen.com/) dataset to categorize the messages into their right categories, so that the governments can respond to disasters quickly.
 
 <a id='project_outline'></a>
 ## 2. Project Outline
