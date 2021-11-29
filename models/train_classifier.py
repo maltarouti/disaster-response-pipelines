@@ -1,24 +1,21 @@
 import sys, re, pickle
 import pandas as pd
 import numpy as np
-from sklearn import pipeline
 from sqlalchemy import create_engine
 
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer, PorterStemmer
+from nltk.stem import PorterStemmer
 nltk.download(['punkt', 'stopwords', 'wordnet'])
 
-import sklearn
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.svm import SVC, LinearSVC
+from sklearn.svm import LinearSVC
 from sklearn.multiclass import OneVsRestClassifier
-from sklearn.metrics import f1_score, recall_score, precision_score, classification_report
+from sklearn.metrics import classification_report
 from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import accuracy_score
 
 import warnings 
 warnings.filterwarnings("ignore")

@@ -1,6 +1,4 @@
 import json
-from numpy.core.fromnumeric import size
-from numpy.lib.function_base import sinc
 import plotly
 import pandas as pd
 
@@ -9,8 +7,8 @@ from nltk.tokenize import word_tokenize
 
 import pickle
 from flask import Flask
-from flask import render_template, request, jsonify
-from plotly.graph_objs import Bar, Pie
+from flask import render_template, request
+from plotly.graph_objs import Pie
 from sqlalchemy import create_engine
 
 
