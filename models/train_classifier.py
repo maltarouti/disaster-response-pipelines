@@ -14,7 +14,7 @@ import sklearn
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC, LinearSVC
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import f1_score, recall_score, precision_score, classification_report
 from sklearn.model_selection import GridSearchCV
@@ -73,12 +73,12 @@ def build_model():
     pipeline = Pipeline([
         ('vectorize', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
-        ('classifier', RandomForestClassifier())
+        ('classifier', OneVsRestClassifier(LinearSVC()))
     ])
     
     # Create the parameters to search using GridSearchCV
     parameters = {
-        'classifier__n_estimators': [50, 100, 200],
+        'classifier__estimator__C': (0.1, 1, 10)
     }
 
     # Create the model using GridSearchCV
@@ -98,7 +98,6 @@ def evaluate_model(model, X_test, Y_test, category_names):
     y_pred = model.predict(X_test)
     report = classification_report(Y_test.values, y_pred, target_names=category_names, zero_division=1)
     print(report)
-    
     print("Model Accuracy: {}%".format(np.mean(y_pred == Y_test.values) * 100))
 
 
