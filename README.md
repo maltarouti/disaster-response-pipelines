@@ -90,17 +90,25 @@ This secions explains how to run each part of this project using command prompt 
 
 <a id='process_data'></a>
 ### 6.1 Process Data
-...
+You must be inside the `data` directory in order to run this command: 
+```shell
+python3 process_data.py disaster_messages.csv disaster_categories.csv <database_name>.db
+```
 
 <a id='train_classifier'></a>
 ### 6.2 Train Classifier 
-...
+You must be inside the `models` directory in order to run this command: 
+```shell
+python3 train_classifier.py ../data/<database_name>.db <model_name>.pkl
+```
 
 <a id='run_flask_app'></a>
 ### 6.3 Run the flask web app
-...
-
-
+You must be inside the `app` directory in order to run this command: 
+```shell
+python3 run.py
+```
+The link of the website will be `0.0.0.0:3001`
 
 <a id='conclusion'></a>
 ## 7. Conclusion
