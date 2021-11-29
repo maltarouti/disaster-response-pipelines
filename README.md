@@ -1,12 +1,13 @@
 # Disaster Response Pipelines
 
 ## Table of Content:
-* [Prject Overview](#project_overview)
+* [Project Overview](#project_overview)
 * [Project Outline](#project_outline)
   * [Extract, Transform, and Load Pipeline](#etl_pipline)
   * [Machine Learning Pipleline](#machine_learning_pipeline)
   * [Flask Web app](#flask_app)
 * [Training Dataset](#dataset)
+* [Machine Learning Model](#model)
 * [Files Structure](#files)
 * [Requirments](#requirments)
 * [Running Process](#running)
@@ -18,7 +19,7 @@
 
 ***
 <a id='project_overview'></a>
-## 1. Prject Overview
+## 1. Project Overview
 Disaster response is to reduce possible losses from disasters and provide appropriate help to disaster victims. It is a continuous process in which governments, corporations, and civil society prepare for and mitigate the effects of catastrophes. An appropiate action at all disaster stages results in higher readiness, better warnings, and decreased susceptibility.
 
 Social media applications are one of the best sources to get a quick overview of what is going on around the world, but it is difficult to go through everything on the internet. This project aims to help governments to filter millions of social media messages into categories by using a supervised machine learning model. The model is trained on [Figure Eight](https://appen.com/) dataset to categorize the messages into their right categories, so that the governments can respond to disasters quickly.
@@ -49,11 +50,15 @@ Flask Web App is responsible for deploying the machine learning model on a websi
 ![image](https://github.com/Murtada-Altarouti/Disaster-Response-Pipelines/blob/main/readme_images/website_example.png)
 
 <a id='dataset'></a>
-## 3. dataest
+## 3. Training Dataset
 The cleaned training dataset contains more than 26K labeled messages and has 36 different classes such as related, offer, food, water, and electricity. The following photo shows how many messages of each dataset has: ![image](https://github.com/Murtada-Altarouti/Disaster-Response-Pipelines/blob/main/readme_images/dataset.png)
 
+<a id='model'></a>
+## 4. The machine learning model
+The macinhe learning model was built using [SVClinear](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) from [scikit-learn](https://scikit-learn.org/) library. The model accruacy was calculated using [Numpy mean](https://github.com/Murtada-Altarouti/Disaster-Response-Pipelines/blob/1bd315ee829e9cda890a88b25fcce356198a1aa5/models/train_classifier.py#L101) which was equal to 95%. 
+
 <a id='files'></a>
-## 4. Files Structure
+## 5. Files Structure
 ```
 ├── app #Website folder
 │   ├── run.py #Responsible of running the website
@@ -78,31 +83,42 @@ The cleaned training dataset contains more than 26K labeled messages and has 36 
 ```
 
 <a id='requirments'></a>
-## 5. Requirments
-...
+## 6. Requirments
+In order to to run this project, you must have [Python3](https://www.python.org/) installed on your machine. You also must have all listed libraries inside the `requirments.txt` so run the following command to install them: 
+```
+pip3 install -r requirments.txt
+```
 
 <a id='running'></a>
-## 6. Running Process
-This secions explains 
+## 7. Running Process
+This secions explains how to run each part of this project using command prompt or terminal
 
 <a id='process_data'></a>
-### 6.1 Process Data
-...
+### 7.1 Process Data
+You must be inside the `data` directory in order to run this command: 
+```shell
+python3 process_data.py disaster_messages.csv disaster_categories.csv <database_name>.db
+```
 
 <a id='train_classifier'></a>
-### 6.2 Train Classifier 
-...
+### 7.2 Train Classifier 
+You must be inside the `models` directory in order to run this command: 
+```shell
+python3 train_classifier.py ../data/<database_name>.db <model_name>.pkl
+```
 
 <a id='run_flask_app'></a>
-### 6.3 Run the flask web app
-...
-
-
+### 7.3 Run the flask web app
+You must be inside the `app` directory in order to run this command: 
+```shell
+python3 run.py
+```
+The link of the website will be `0.0.0.0:3001`
 
 <a id='conclusion'></a>
-## 7. Conclusion
-...
+## 8. Conclusion
+In conclusion, catastrophes are horrible if we are not properly prepared to deal with them, thus having a system that consistently delivers correct warnings is helpful to get an early notice of a potential disaster and decrease potential losses. The system was built using scikit-learn and achieved 95% accuracy, but that does not mean it is the best model. Testing different solutions such as [Reccurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network) may give a better result so, feel free to fork this repository and test different solutions.
 
 <a id='acknowledgements'></a>
-## 8. Acknowledgements
+## 9. Acknowledgements
 I would like to express my appreciation to Misk Academy and Udacity for the amazing work on the data science course and the support they give us to build this project
