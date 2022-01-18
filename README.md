@@ -84,7 +84,7 @@ The macinhe learning model was built using [SVClinear](https://scikit-learn.org/
 
 <a id='requirments'></a>
 ## 6. Requirments
-In order to to run this project, you must have [Python3](https://www.python.org/) installed on your machine. You also must have all listed libraries inside the `requirments.txt` so run the following command to install them: 
+In order to run this project, you must have [Python3](https://www.python.org/) installed on your machine. You also must have all listed libraries inside the `requirments.txt` so run the following command to install them: 
 ```
 pip3 install -r requirments.txt
 ```
